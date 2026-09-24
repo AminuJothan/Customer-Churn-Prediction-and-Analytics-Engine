@@ -37,17 +37,3 @@ After comparing a non-linear ensemble model (**Random Forest**) against a linear
 ## 📊 Model Performance & Selection
 * **Logistic Regression:** Chosen as the final production model due to its high transparency and explicit coefficients, allowing direct business interpretation of log-odds.
 * **Evaluation Metric:** Prioritized **ROC-AUC** and **Precision-Recall** trade-offs to handle class imbalance effectively, ensuring high-risk churners are successfully captured while minimizing false alarms.
-
----
-
-## ⚙️ How to Use the Analytics Engine
-
-### 1. Load Dependencies & Artifacts
-```python
-import joblib
-import numpy as np
-import pandas as pd
-
-# Load your trained model and scaler
-model = joblib.load('logistic_regression_model.pkl')
-scaler = joblib.load('scaler.pkl')
